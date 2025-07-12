@@ -2,9 +2,12 @@
 
 akuma.ai の認証ファイルを作成するリポジトリ
 
-## 前提条件
+## 機能紹介(2025.07.12時点)
 
-### Python3 のインストール
+
+## セットアップ手順
+
+### 手順1: Python3 のインストール
 
 #### Ubuntu/Debian (WSL2 含む)
 
@@ -38,7 +41,7 @@ brew install python3
 # インストール時に「Add Python to PATH」にチェックを入れる
 ```
 
-### 依存関係の確認
+### 手順2: 依存関係の確認
 
 ```bash
 # Python3が利用可能か確認
@@ -51,30 +54,28 @@ pip3 --version
 python3 -m venv --help
 ```
 
-## セットアップ手順
-
-### 1. リポジトリのクローン
+### 手順3: リポジトリのクローン
 
 ```bash
-git clone <repository-url>
+git clone <repository-url> create-auth-akumaAI
 cd create-auth-akumaAI
 ```
 
-### 2. 仮想環境の作成
+### 手順4: 仮想環境の作成
 
 ```bash
 # 仮想環境を作成
 python3 -m venv venv
 
 # 仮想環境をアクティベート
-# Ubuntu/Debian/macOS
+## Ubuntu/Debian/macOS の場合
 source venv/bin/activate
 
-# Windows
+## Windows の場合
 venv\Scripts\activate
 ```
 
-### 3. 依存関係のインストール
+### 手順5: 依存関係のインストール
 
 ```bash
 # pipを最新版にアップグレード
@@ -84,26 +85,37 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Playwright のセットアップ
+### 手順6: Playwright のセットアップ
 
 ```bash
 # Playwrightのブラウザをインストール
 playwright install chromium
 ```
 
-### 5. 環境変数の設定
+### 手順7: 環境変数の設定
 
 ```bash
 # .env.exampleファイルをコピー
 cp .env.example .env
-
-# 必要に応じて.envファイルを編集
-nano .env
 ```
 
-## 使用方法
+### 手順8: 環境変数の設定
 
-### 認証ファイルの生成
+AKUMA_JOB_URLには、akuma.aiの作成画像の詳細画面のリンクを設置
+
+```.env.example
+AKUMA_JOB_URL=https://akuma.ai/jobs/xxxxx?image=xxxxx
+```
+
+▼例
+```.env.example
+AKUMA_JOB_URL=https://akuma.ai/jobs/175e1afd-7c76-470c-a8bc-915d044f74e9?image=e27d1ce6-f450-42ee-89f6-dec6af08358d
+```
+<img width="450" height="770" alt="スクリーンショット 2025-07-12 170904" src="https://github.com/user-attachments/assets/f622705f-15cd-47bd-8b79-99078716cf32" />
+
+## リポジトリの使用
+
+### 機能1: 認証ファイルの生成
 
 ```bash
 # 仮想環境をアクティベート
@@ -113,7 +125,9 @@ source venv/bin/activate
 python generate_state_json.py
 ```
 
-### Akuma スクレイピング
+### 機能2: Akuma URLから画像のダウンロードとタグ情報の取得
+
+※認証ファイルを生成している必要があります。
 
 ```bash
 # 仮想環境をアクティベート
