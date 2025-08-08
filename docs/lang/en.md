@@ -19,7 +19,7 @@ Description: 1 girl, solo, long hair, smiling, mouth open, simple background, sh
 Image saved: output/akuma_image_175e1afd_20250712_173533.webp
 ```
 
-<img width="400" height="auto" alt="Image download and tag information retrieval 1" src="docs/images/feature-2_1.png" />
+<img width="400" height="auto" alt="Image download and tag information retrieval 1" src="../images/feature-2_1.png" />
 
 ## Setup Instructions
 
@@ -129,7 +129,7 @@ AKUMA_JOB_URL=https://akuma.ai/jobs/xxxxx?image=xxxxx
 AKUMA_JOB_URL=https://akuma.ai/jobs/175e1afd-7c76-470c-a8bc-915d044f74e9?image=e27d1ce6-f450-42ee-89f6-dec6af08358d
 ```
 
-<img width="auto" alt="Environment variable example" src="docs/images/setup-8_1.png" />
+<img width="auto" alt="Environment variable example" src="../images/setup-8_1.png" />
 
 ## Using the Repository
 
@@ -144,14 +144,14 @@ python generate_state_json.py
 ```
 
 1. **A browser will be generated, so perform authentication**
-   - <img width="400" height="auto" alt="Authentication file generation 1" src="docs/images/feature-1_1.png" />
-   - <img width="400" height="auto" alt="Authentication file generation 2" src="docs/images/feature-1_2.png" />
-   - <img width="400" height="auto" alt="Authentication file generation 3" src="docs/images/feature-1_3.png" />
-   - <img width="400" height="auto" alt="Authentication file generation 4" src="docs/images/feature-1_4.png" />
-   - <img width="400" height="auto" alt="Authentication file generation 5" src="docs/images/feature-1_5.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 1" src="../images/feature-1_1.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 2" src="../images/feature-1_2.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 3" src="../images/feature-1_3.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 4" src="../images/feature-1_4.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 5" src="../images/feature-1_5.png" />
 2. **Return to terminal and press Enter to generate state.json**
-   - <img width="400" height="auto" alt="Authentication file generation 6" src="docs/images/feature-1_6.png" />
-   - <img width="400" height="auto" alt="Authentication file generation 7" src="docs/images/feature-1_7.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 6" src="../images/feature-1_6.png" />
+   - <img width="400" height="auto" alt="Authentication file generation 7" src="../images/feature-1_7.png" />
 
 ### Feature 2: Download Images and Retrieve Tag Information from Akuma URL
 
@@ -174,4 +174,4 @@ Description: 1 girl, solo, long hair, smiling, mouth open, simple background, sh
 Image saved: output/akuma_image_175e1afd_20250712_173533.webp
 ```
 
-<img width="400" height="auto" alt="Image download and tag information retrieval 1" src="docs/images/feature-2_1.png" />
+<img width="400" height="auto" alt="Image download and tag information retrieval 1" src="../images/feature-2_1.png" />
