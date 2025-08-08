@@ -1,6 +1,6 @@
 # CreateAuthAkumaAI
 
-[English](../../README.md) | 日本語
+[日本語](../../README.md) | English
 
 Repository for creating authentication files for akuma.ai.
 
