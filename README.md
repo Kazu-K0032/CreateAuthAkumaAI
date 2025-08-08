@@ -1,5 +1,7 @@
 # CreateAuthAkumaAI
 
+[English](./docs/lang/en.md) | 日本語
+
 akuma.ai の認証ファイルを作成するリポジトリ。
 
 2025.07.12時点だと生成したイラスト情報を取得できる公式APIが存在せず、プログラムから画像やタグ情報を取得できない問題があった。
@@ -15,7 +17,7 @@ akuma.ai の認証ファイルを作成するリポジトリ。
 説明文: 女の子1人、ソロ、ロングヘア、笑顔、口を開けている、シンプルな背景、シャツ、白い背景、立っている、ポニーテール、黄色い目、全身、にっこり、短袖、緑の髪、靴、ショートパンツ、pokemon、オレンジの目、ニヤリ、ほっぺシール、サスペンダー、擬人化、オーバーオール、緑の靴、緑のショートパンツ、サスペンダー付きショーツ
 画像を保存しました: output/akuma_image_175e1afd_20250712_173533.webp
 ```
-<img width="400" height="auto" alt="画像のダウンロードとタグ情報の取得1" src="doc/feature-2_1.png" />
+<img width="400" height="auto" alt="画像のダウンロードとタグ情報の取得1" src="docs/images/feature-2_1.png" />
 
 
 ## セットアップ手順
@@ -124,7 +126,7 @@ AKUMA_JOB_URL=https://akuma.ai/jobs/xxxxx?image=xxxxx
 ```.env.example
 AKUMA_JOB_URL=https://akuma.ai/jobs/175e1afd-7c76-470c-a8bc-915d044f74e9?image=e27d1ce6-f450-42ee-89f6-dec6af08358d
 ```
-<img width="auto" alt="環境変数の例" src="doc/setup-8_1.png" />
+<img width="auto" alt="環境変数の例" src="docs/images/setup-8_1.png" />
 
 ## リポジトリの使用
 
@@ -139,14 +141,14 @@ python generate_state_json.py
 ```
 
 1. **ブラウザが生成されるので認証を行う**
-    - <img width="400" height="auto" alt="認証ファイルの生成1" src="doc/feature-1_1.png" />
-    - <img width="400" height="auto" alt="認証ファイルの生成2" src="doc/feature-1_2.png" />
-    - <img width="400" height="auto" alt="認証ファイルの生成3" src="doc/feature-1_3.png" />
-    - <img width="400" height="auto" alt="認証ファイルの生成4" src="doc/feature-1_4.png" />
-    - <img width="400" height="auto" alt="認証ファイルの生成5" src="doc/feature-1_5.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成1" src="docs/images/feature-1_1.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成2" src="docs/images/feature-1_2.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成3" src="docs/images/feature-1_3.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成4" src="docs/images/feature-1_4.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成5" src="docs/images/feature-1_5.png" />
 2. **ターミナルに戻り、Enterを押すと、state.jsonが生成される**
-    - <img width="400" height="auto" alt="認証ファイルの生成6" src="doc/feature-1_6.png" />
-    - <img width="400" height="auto" alt="認証ファイルの生成7" src="doc/feature-1_7.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成6" src="docs/images/feature-1_6.png" />
+    - <img width="400" height="auto" alt="認証ファイルの生成7" src="docs/images/feature-1_7.png" />
 
 ### 機能2: Akuma URLから画像のダウンロードとタグ情報の取得
 
@@ -167,4 +169,4 @@ python scraping.py
 説明文: 女の子1人、ソロ、ロングヘア、笑顔、口を開けている、シンプルな背景、シャツ、白い背景、立っている、ポニーテール、黄色い目、全身、にっこり、短袖、緑の髪、靴、ショートパンツ、pokemon、オレンジの目、ニヤリ、ほっぺシール、サスペンダー、擬人化、オーバーオール、緑の靴、緑のショートパンツ、サスペンダー付きショーツ
 画像を保存しました: output/akuma_image_175e1afd_20250712_173533.webp
 ```
-<img width="400" height="auto" alt="画像のダウンロードとタグ情報の取得1" src="doc/feature-2_1.png" />
+<img width="400" height="auto" alt="画像のダウンロードとタグ情報の取得1" src="docs/images/feature-2_1.png" />
